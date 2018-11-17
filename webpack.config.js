@@ -3,12 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-  // mode: 'development',
+  mode: 'development',
   devtool: 'eval',
   devServer: {
     historyApiFallback: true,
     proxy: {
-      '/data': 'http://localhost:8081',
+      '/api': 'http://localhost:8081',
     },
   },
 
